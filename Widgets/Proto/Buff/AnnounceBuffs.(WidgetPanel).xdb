@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WidgetPanel>
+	<Name>AnnounceBuffs</Name>
+	<Children>
+		<Item href="AnnounceTexture.(WidgetPanel).xdb" />
+		<Item href="AnnounceLabel.(WidgetTextView).xdb" />
+		<Item href="AnnounceCounter.(WidgetTextView).xdb" />
+	</Children>
+	<Header>
+		<isPrototype>true</isPrototype>
+	</Header>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Size>70</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_LOW</Align>
+			<Size>25</Size>
+		</Y>
+	</Placement>
+</WidgetPanel>

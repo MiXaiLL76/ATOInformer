@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WidgetForm>
+	<Name>AstralATO</Name>
+	<Priority>13000</Priority>
+	<Children>
+		<Item href="BuffPanel.(WidgetPanel).xdb" />
+	</Children>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</Y>
+	</Placement>
+	<PickChildrenOnly>true</PickChildrenOnly>
+</WidgetForm>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WidgetPanel>
+	<Name>PVE</Name>
+	<Header>
+		<Prototype href="Proto/Buff/AnnounceBuffs.(WidgetPanel).xdb" />
+	</Header>
+	<Placement>
+		<X>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_CENTER</Align>
+		</Y>
+	</Placement>
+</WidgetPanel>

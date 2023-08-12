@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<UIAddon>
+	<Name>ATOInformer</Name>
+	<localizedNameFileRef href="name.txt" />
+	<localizedDescFileRef href="desc.txt" />
+	<AutoStart>true</AutoStart>
+	<ScriptFileRefs>
+		<Item href="Scripts/Helpers/utf_to_ansi.lua" />
+		<Item href="Scripts/Helpers/helpers.lua" />
+		<Item href="Scripts/Helpers/LibDnD.lua" />
+		<Item href="Scripts/Helpers/levenshtein.lua" />
+		<Item href="Scripts/AstralBuff.lua" />
+		<Item href="Scripts/ScriptMain.lua" />
+	</ScriptFileRefs>
+	<Form href="Widgets/MainForm.(WidgetForm).xdb" />
+	<soundsGroups>
+		<Item>
+			<groupName>Sound</groupName>
+			<sounds href="Widgets/Sound.(UIRelatedSounds).xdb#xpointer(/UIRelatedSounds)" />
+		</Item>
+	</soundsGroups>
+</UIAddon>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WidgetPanel>
+	<Name>AnnounceTexture</Name>
+	<Placement>
+		<X>
+			<Size>37</Size>
+		</X>
+		<Y>
+			<Align>WIDGET_ALIGN_BOTH</Align>
+		</Y>
+	</Placement>
+	<BackLayer href="Textures/Buff.(WidgetLayerSimpleTexture).xdb" />
+	<Visible>false</Visible>
+	<PickChildrenOnly>true</PickChildrenOnly>
+</WidgetPanel>

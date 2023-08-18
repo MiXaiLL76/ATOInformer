@@ -63,11 +63,16 @@ function AstralBuff.ChangeTransport()
     AstralBuff.last_time = common.GetLocalDateTimeMs() / 1000
 
     if AstralBuff.shipId == nil then return end
-    AstralBuff.reg_un_reg()
+    
+    if AstralBuff.registred then
+        AstralBuff.reg_un_reg()
+    end
+
     AstralBuff.reg_un_reg()
 
     LogToChat("Вы сели на транспорт: " ..
                   dump({["shipID"] = AstralBuff.shipId}))
+    -- LogToChat(dump(AstralBuff.registred))
 end
 
 function AstralBuff.get_my_id()
@@ -91,6 +96,7 @@ function AstralBuff.FindShipBuffs()
     for i, buffID in pairs(activeBuffs) do
         local buff_info = object.GetBuffInfo(buffID)
         local buff_name = getNormalString(buff_info['name'])
+        -- LogToChat(dump(buff_info))
 
         if buff_name:find(Utf8ToAnsi(AstralBuff.pvp_astral_chest_name)) then
             -- LogToChat(dump(buff_info))
@@ -118,6 +124,8 @@ end
 
 function AstralBuff.WatchShipBuffs()
     if AstralBuff.shipId == nil then return end
+
+    -- LogToChat(dump(AstralBuff.shipId ))
 
     local delta = math.floor((common.GetLocalDateTimeMs() / 1000) -
                                  AstralBuff.last_time)
